@@ -17,9 +17,7 @@ const moment = require("moment");
 const app = express();
 
 app.use(
-  cors({
-    origin: process.env.FONTEND_SERVER,
-  })
+  cors()
 );
 app.use(fileUpload());
 app.use(express.json());
